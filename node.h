@@ -7,17 +7,15 @@ using namespace std;
 class Node
 {
  public:
-  Node();
+  Node(Student*);
   ~Node();
-  void setVect(vector<Node*>new_vect);
+  void setVect();
   Node* getVect();
-  void setNext(vector<Node*>new_next);
+  void setNext();
   Node* getNext();
 
  private:
-  vector<Node*>entry;
-  vector<Node*>new_vect;
-  vector<Node*>next;
+  //Student* ...
 };
 
 #endif

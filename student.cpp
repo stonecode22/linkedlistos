@@ -1,23 +1,40 @@
-#include"Student.h"
-#include"Node.h"
 #include<iostream>
 #include<cstring>
+#include"student.h"
 using namespace std;
 
-Student::Student()
+Student::Student(Student* )
 {
-  id = NULL;
+  first_name = new char[20];
+  last_name = new char[20];
+  id = new char[7];
+  gpa = new char[5];
+
+  strcpy(first_name, fname);
+  strcpy(last_name, lname);
+  strcpy(id, s_id);
+  strcpy(gpa, grade);
 }
 
-Student::get_id()
+Student::~Student()
 {
+  delete[] first_name;
+  delete[] last_name;
+  delete[] id;
+  delete[] gpa;
+}
+
+char* Student::getStudent()
+{
+  return first_name;
+  return last_name;
   return id;
-}
-
-Student::getStudent()
-{
-  return fname;
-  return lname;
   return gpa;
-  return id;
+}
+
+void Student::printStudent()
+{
+  cout << "Name: " << first_name << " " << last_name << endl;
+  cout << "ID: " << id << endl;
+  cout << "GPA: " << gpa << endl;
 }

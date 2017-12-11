@@ -1,22 +1,20 @@
 #ifndef STUDENT_H
 #define STUDENT_H
-#include<iostream>
-#include<cstring>
-using namespace std;
+#include"Node.h"
 
-class Student
+class Student : public Node
 {
  public:
-  Student();
+  Student(char* fname, char* lname, char* s_id,  char* grade);
   ~Student();
-  get_id();
-  getStudent();
+  char* getStudent();
+  void printStudent();
   
- protected:
-  char fname[20];
-  char lname[20];
-  float gpa;
-  int id;
+ private:
+  char* first_name;
+  char* last_name;
+  char* id;
+  char* gpa;
 };
 
 #endif
