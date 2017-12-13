@@ -1,8 +1,9 @@
+//From Stone Y.
+//To Dieter V.
 #ifndef NODE_H
 #define NODE_H
 #include<iostream>
-#include<vector>
-#include"string.h"
+#include<string.h>
 #include"student.h"
 using namespace std;
 

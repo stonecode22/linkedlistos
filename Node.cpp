@@ -4,9 +4,9 @@
 #include <vector>
 using namespace std;
 
-Node::Node(Student* _s)
+Node::Node(Student* sdnt)
 {
-  s = _s;
+  s = sdnt;
   n = NULL;
 }
 

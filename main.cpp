@@ -12,7 +12,11 @@ int main()
   Node* node_2 = new Node(student_2);
   Node* node_3 = new Node(student_3);
 
+  
   node_1 -> setNext(node_2);
+  node_2 -> setNext(node_3);
+  
   cout << node_1 -> getNext() -> getStudent() -> get_id() << endl;
+  cout << node_2 -> getNext() -> getStudent() -> get_id() << endl;
   return 0;
 }
